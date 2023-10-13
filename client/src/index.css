@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  
+}
+
+:root {
+  --background-color: rgb( 31,31,34 );
+  --container-color: rgb( 40,39,42 );
+  --surface-color: rgb( 64,63,70 );
+  --text-color: rgb(255,255,255);
+  --resistance-base-color: rgb( 207, 208, 205 );
+  --resistance-border-color: rgb(165,165,165);
+  --resistance-wood-color: rgb(237,210,163);
+}
+
+body {
+  overflow: hidden;
+}
+
+h4 {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1;
+
+  margin-top: 4px;
+}
+p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1;
+}
+
+option {
+  font-weight: bold;
+  cursor: pointer;
+}
+select {
+  box-shadow: none;
+  outline: 10px red;
+  font-weight: bold;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+label {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 12px 0;
+}
+
+.select-container > * {
+  width: 80%;
+}
+
+.value-container {
+  width: fit-content;
+  height: fit-content;
+
+  padding: 10px;
+  margin-top: 5px;
+  background: var(--surface-color);
+
+  border-radius: 13px;
+}
+.value-container > h4 {
+  margin-top: 0px !important;
+}
+
+.full-screen {
+  display: flex;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--background-color);
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: fit-content;
+
+  padding: 12px;
+  margin: auto;
+
+  background-color: var(--container-color);
+}
+
+button {
+  border: none;
+  background: none;
+  color: var(--text-color);
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.tabs-container {
+  position: absolute;
+  height: 30px;
+  top: -30px;
+  left: 0;
+  background-color: var(--surface-color);
+}
+.tabs-container > button {
+  height: 100%;
+  background: var(--surface-color);
+  padding: 0 5px;
+
+  cursor: pointer;
+}
+.tabs-container > button:disabled {
+  background: var(--container-color);
+
+  /* border-top: solid 1px white; */
+  cursor: default !important;
+}
+
+.resistance-img-container {
+  position: relative;
+  width: 319px;
+  height: 76px;
+}
+
+.resistance-img-container > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 319px;
+  height: 76px;
+}
+
+.resistance-img-base {
+  position: absolute;
+  top: calc(28px);
+  height: 24px;
+  left: 1px;
+  width: 317px;
+
+  background: var(--resistance-base-color);
+
+  border: solid 2px var(--resistance-border-color);
+}
+
+.resistance-img-wood-one {
+  position: absolute;
+  top: 10px;
+  height: 56px;
+  left: 25px;
+  width: 269px;
+
+  background: var(--resistance-wood-color);
+
+  border: solid 2px var(--resistance-border-color);
+}
+
+.resistance-img-wood-left-one {
+  position: absolute;
+  top: 0;
+  height: 76px;
+  left: 12px;
+  width: 30px;
+
+  background: var(--resistance-wood-color);
+
+  border-bottom: solid 2px var(--resistance-border-color);
+  border-top: solid 2px var(--resistance-border-color);
+
+  border-bottom-left-radius: 40%;
+  border-top-left-radius: 40%;
+}
+
+.resistance-img-wood-left-two {
+  position: absolute;
+  top: 0;
+  height: 76px;
+  left: 40px;
+  width: 20px;
+
+  background: var(--resistance-wood-color);
+
+  border-bottom: solid 2px var(--resistance-border-color);
+  border-top: solid 2px var(--resistance-border-color);
+
+  border-bottom-right-radius: 20%;
+  border-top-right-radius: 20%;
+}
+
+.resistance-img-wood-right-one {
+  position: absolute;
+  top: 0;
+  height: 76px;
+  left: 277px;
+  width: 30px;
+
+  background: var(--resistance-wood-color);
+
+  border-bottom: solid 2px var(--resistance-border-color);
+  border-top: solid 2px var(--resistance-border-color);
+
+  border-bottom-right-radius: 40%;
+  border-top-right-radius: 40%;
+}
+
+.resistance-img-wood-right-two {
+  position: absolute;
+  top: 0;
+  height: 76px;
+  left: 259px;
+  width: 20px;
+
+  background: var(--resistance-wood-color);
+
+  border-bottom: solid 2px var(--resistance-border-color);
+  border-top: solid 2px var(--resistance-border-color);
+
+  border-bottom-left-radius: 20%;
+  border-top-left-radius: 20%;
+}
+
+.band-one {
+  position: absolute;
+  top: 2px;
+  height: 72px;
+  width: 14px;
+  left: 30px;
+
+  background: black;
+}
+
+.band-two {
+  position: absolute;
+  top: 12px;
+  height: 52px;
+  width: 14px;
+  left: 70px;
+
+  background: black;
+}
+
+.band-three {
+  position: absolute;
+  top: 12px;
+  height: 52px;
+  width: 14px;
+  left: 100px;
+
+  background: black;
+}
+
+.multiplier {
+  position: absolute;
+  top: 12px;
+  height: 52px;
+  width: 14px;
+  left: 195px;
+
+  background: black;
+}
+
+.tolerance {
+  position: absolute;
+  top: 2px;
+  height: 72px;
+  width: 14px;
+  left: 275px;
+
+  background: black;
+}
+
+.calculation-viewer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
