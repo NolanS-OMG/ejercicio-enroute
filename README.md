@@ -2,7 +2,7 @@
 
 ### Requisitos
 Tener instalado NodeJS <br />
-Tener instalado MongoDB y haber abierto una conección en el puerto "27017" (puerto default de MongoDB)
+Tener instalado MongoDB y haber abierto una conexión en el puerto "27017" (puerto default de MongoDB)
 
 ###Paso 1
 Clonar el repositorio
