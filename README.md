@@ -1,8 +1,28 @@
 # Instrucciones
 
 ### Requisitos
+Tener instalado NodeJS
+Tener instalado MongoDB
+
+###Paso 1
+Clonar el repositorio
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+git clone https://github.com/NolanS-OMG/ejercicio-enroute.git
 ```
+###Paso 2
+Instalar las dependencias del backend
+```
+npm i
+```
+###Paso 3
+En una nueva terminal de comandos, en el mismo directorio, nos pasamos a la carpeta "client" e instalamos las dependencias para el front-end
+```
+cd client
+npm i
+```
+###Paso 4
+Con ambas terminales abiertas ejecutamos el mismo comando en los distintos directorios
+```
+npm start
+```
+Listo
